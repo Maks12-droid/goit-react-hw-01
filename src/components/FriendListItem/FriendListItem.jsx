@@ -7,6 +7,9 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
     <span className={isOnline ? styles.online : styles.offline}></span>
     <img className={styles.avatar} src={avatar} alt={name} width="60" />
     <p className={styles.name}>{name}</p>
+    <p className={isOnline ? styles.statusTextOnline : styles.statusTextOffline}>
+      {isOnline ? 'Онлайн' : 'Офлайн'}
+    </p>
   </li>
 );
 
@@ -21,3 +24,4 @@ FriendListItem.propTypes = {
 };
 
 export default FriendListItem;
+

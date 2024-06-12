@@ -53,3 +53,11 @@
 .name {
   font-weight: 500;
 }
+
+.statusTextOnline {
+  color: #4caf50;
+}
+
+.statusTextOffline {
+  color: #f44336;
+}
